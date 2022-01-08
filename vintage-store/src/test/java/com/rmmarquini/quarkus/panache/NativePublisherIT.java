@@ -1,9 +1,9 @@
-package com.rmmarquini.quarkus.jdbc;
+package com.rmmarquini.quarkus.panache;
 
 import io.quarkus.test.junit.NativeImageTest;
 
 @NativeImageTest
-public class NativeGreetingResourceIT extends GreetingResourceTest {
+public class NativePublisherIT extends PublisherTest {
 
     // Execute the same tests but in native mode.
 }

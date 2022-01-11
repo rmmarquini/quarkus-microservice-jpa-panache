@@ -1,16 +1,21 @@
 package com.rmmarquini.quarkus.panache;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
+import io.quarkus.hibernate.orm.panache.PanacheEntity;
 
-@Path("/hello")
-public class Publisher {
+import javax.persistence.Entity;
+import java.time.Instant;
 
-    @GET
-    @Produces(MediaType.TEXT_PLAIN)
-    public String hello() {
-        return "Hello RESTEasy";
+@Entity
+public class Publisher extends PanacheEntity {
+
+    public String name;
+    public Instant created_at = Instant.now();
+
+    public Publisher() {
     }
+
+    public Publisher(String name) {
+        this.name = name;
+    }
+
 }

@@ -1,5 +1,6 @@
-package com.rmmarquini.quarkus.panache;
+package com.rmmarquini.quarkus.panache.repository;
 
+import com.rmmarquini.quarkus.panache.model.Publisher;
 import io.quarkus.test.TestTransaction;
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.Test;
